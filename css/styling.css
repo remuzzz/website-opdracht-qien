@@ -9,11 +9,12 @@ img {
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-size: 18px;
     line-height: 26px;
     color: #616161;
 }
+
 
 nav {
     padding: 20px 0;
@@ -23,36 +24,63 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
+
+.nav-wrapper ul li:hover ul {
+     display: block;
+    cursor: pointer;
+ 
+}
+
 
 .nav-list {
     
 }
 
+.nav-list ul{
+    position: absolute;
+    list-style-type: none;
+    
+  
+}
+
 .nav-list-item {
     display: inline-block;
     padding: 16px 32px;
+    
 }
 
 .nav-list-item a {
     text-decoration: none;
+    font-weight: bolder;
     color: #616161;
-    font-size: 20px;
-    font-weight: 200;
+    font-size: 18px;
+    
 }
 
 .nav-list-item a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 2px solid #00E676;
     color: #212121;
 }
 
 .nav-inner-list {
     display: none;
+  
 }
 
+
 .nav-inner-list-item {
-    
+  text-decoration: none;
+  background-color: hsla(0, 0%, 100%, 0.4);
+  padding:7px;
+  
 }
+.nav-inner-list-item a {
+    text-decoration: none;
+    font-weight: normal;
+  }
 
 section {
     padding-top: 80px;
@@ -62,6 +90,15 @@ section {
 .header-section {
     background-color: #E0F2F1;
 }
+
+.header-section-red {
+    background-color:#F1672C;
+    color:#ffffff
+}
+.header-section-red h1 {
+    color:#ffffff
+}
+
 
 .container {
     max-width: 1400px;
@@ -109,6 +146,8 @@ section {
     align-items: center;
     padding: 40px 0;
 }
+
+
 
 .article-text-wrapper {
     flex-grow: 1;
@@ -181,16 +220,19 @@ button:hover {
     color: #212121;
 }
 
+
 .logo-first {
     display: block;
-    font-size: 24px;
-    font-weight: 800;
-    color: #00C853;
+    font-size: 34px;
+    font-stretch: narrower;
+    font-weight: bold;
+    color: #4A426E;
 }
 
 .logo-second {
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 800;
+    color: #0EAE89;
 }
 #border{
     border-top :5px #FFFFFF dashed;
@@ -211,7 +253,7 @@ button:hover {
 {
     background-color: #FFFFFF   ;
     color:darkblue;
-    font-size: 11px;
+    font-size: 12px;
     border-radius: 0%;
      padding:16px;
     margin: 3px;
@@ -229,7 +271,7 @@ background-color: #F16528;
 color:#FFFFFF;
 font-size: 12px;
 max-width: 250px;
-padding:5px;
+padding: 25px 15px 25px 15px;
 margin:3px;
 }
 .box-orange h3
@@ -237,13 +279,14 @@ margin:3px;
     font-weight: bold;
     color:#FFFFFF;
     font-size: 14px;
+    
 }
 .box-blue {
     background-color: #2063AE;
     color:#FFFFFF;
     font-size: 12px;
     max-width: 250px;
-    padding:5px;
+    padding: 25px 15px 25px 15px;
     margin:3px;
     }
     .box-blue h3
@@ -258,6 +301,12 @@ margin:3px;
     flex-direction: row;
   
 }
+.flex-column
+{
+    max-width: 310px;
+    margin:5px;
+}
+
 .footer
 {
     background-color: #0EAE89;
@@ -265,8 +314,45 @@ margin:3px;
     padding-left: 155px;
    
     color: #ffffff;
-    font-size: smaller;
+    font-size: smaller; 
 }
+
+/* TABEL STYLING */
+table
+{
+    max-width: 768px;
+    border-spacing:0px;
+
+}
+
+table th {
+    background-color:#EAF8EB;
+    text-align: left;
+    height:35px;
+    padding-left: 5px;
+    font-weight: bold;
+    color:#000000;
+}
+
+table td{
+    background-color: #EFEFEF;
+    border-top: #E9E9E9 solid 2px;
+    border-left: #E9E9E9 solid 2px;
+    padding:2px;
+    margin:2px;
+}
+table td a
+{
+
+        color:#212121;
+        text-decoration: underline;
+}
+
+.orange{
+    font-size: smaller; 
+    color: #F08556;
+}
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 767px) {

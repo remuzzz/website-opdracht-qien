@@ -1,61 +1,13 @@
-<!DOCTYPE html>
-<html lang=”nl”>
-
-<head>
-    
-    <title>Leren Front End</title>
-    <link rel="stylesheet" href="css/styling.css">
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="container">
-                <div class="nav-wrapper">
-                    <a class="nav-logo">
-                        <span class="logo-first">Qien Coding</span>
-                        <span class="logo-second">institute</span> 
-                    </a>
-                    
-                    <ul class="nav-list">
-                        <li class="nav-list-item"><a href="html.html">HTML</a>
-                            <ul class="nav-inner-list">
-                                <li class="nav-inner-list-item">Wat is het?</li>
-                                <li class="nav-inner-list-item"><a href="cursussen/tabellen.html">Cursussen</a></li>
-                                <li class="nav-inner-list-item">Quizes</li>
-                            </ul>
-                        </li>
-                        <li class="nav-list-item"><a href="html.html">CSS</a>
-                            <ul class="nav-inner-list">
-                                <li class="nav-inner-list-item">Wat is het?</li>
-                                <li class="nav-inner-list-item">Cursussen</li>
-                                <li class="nav-inner-list-item">Quizes</li>
-                            </ul>
-                        </li>
-                        <li class="nav-list-item"><a href="html.html">JS</a>
-                            <ul class="nav-inner-list">
-                                <li class="nav-inner-list-item">Wat is het?</li>
-                                <li class="nav-inner-list-item">Cursussen</li>
-                                <li class="nav-inner-list-item">Quizes</li>
-                            </ul>
-                        </li>
-                        <li class="nav-list-item"><a href="html.html">Quizes</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
-        <section class="header-section">
+<section class="header-section">
             <div class="container">
                 <div>
                     <div class="header-outer-wrapper">
                         <div class="header-text-wrapper">
-                            <h1 id="border">Leer de basis van HTML, CSS en JS</h1>
+                            <h1 id="border">Leer de basis van<br> HTML, CSS en JS</h1>
                             <p class="paragraph-large">Met onze <b>geweldige cursussen</b> zul je binnen no time prachtige websites bouwen. Test je <em>skills</em> met onze quizes!</p>
                 
                             <div class="button-wrapper">
-                                <button>Bekijk cursussen</button>
+                                <button onclick="location.href='index.php?pagina=html';">Bekijk cursussen</button>
                                 <button class="button-2">Doe een quiz</button>
                             </div>
                         </div>
@@ -117,7 +69,7 @@
                         </p>
                     </div>
                     <div class="article-img-wrapper">
-                        <img class="article-img" src="https://stackify.com/wp-content/uploads/2018/10/JavaScript-Tutorials-for-Beginners-881x441.jpg" alt="afbeelding html" title="html5 afbeelding">
+                        <img class="article-img" src="img/javascript.png" alt="afbeelding html" title="html5 afbeelding">
                     </div>
                 </article>
             </div>
@@ -132,7 +84,7 @@
                     </p>
                 </div>
 
-                <button>Onze HTML-cursussen --></button> 
+                <button onclick="location.href='index.php?pagina=html';">Onze HTML-cursussen --></button> 
                 <button>Bekijk onze CSS-cursussen --></button>
                 <button>Bekijk onze JS-cursussen --></button>
             </div>
@@ -161,14 +113,3 @@
             </div>
         </section>
     </main>
-    
-    <footer>
-        <div class="footer">
-            <small>© 2020 Maurice </small>
-        </div>
-    </footer>
-
-</body>
-
-</html>
-
